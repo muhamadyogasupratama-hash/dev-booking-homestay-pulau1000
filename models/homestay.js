@@ -1,8 +1,6 @@
-const {formatRupiah} = require("../helpers/formatRupiah")
-'use strict';
-const {
-  Model
-} = require('sequelize');
+const { formatRupiah } = require("../helpers/formatRupiah");
+("use strict");
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Homestay extends Model {
     /**
@@ -12,22 +10,32 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Homestay.hasMany(models.Booking, {
+        foreignKey: "HomeStayId",
+      });
+
+      Homestay.belongsToMany(models.Amnesty, {
+        through: models.HomestayAmenity,
+        foreignKey: "HomeStayId",
+      });
     }
-
- get formattedPrice() {
-  return formatRupiah(this.pricePerNight)
+ 
+    get formattedPrice() {
+      return formatRupiah(this.pricePerNight);
+    }
   }
-
-  }
-  Homestay.init({
-    name: DataTypes.STRING,
-    imageUrl: DataTypes.STRING,
-    pricePerNight: DataTypes.INTEGER,
-    roomAvailable: DataTypes.INTEGER,
-    contactPIC: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'Homestay',
-  });
+  Homestay.init(
+    {
+      name: DataTypes.STRING,
+      imageUrl: DataTypes.STRING,
+      pricePerNight: DataTypes.INTEGER,
+      roomAvailable: DataTypes.INTEGER,
+      contactPIC: DataTypes.STRING,
+    },
+    {
+      sequelize,
+      modelName: "Homestay",
+    },
+  );
   return Homestay;
 };
