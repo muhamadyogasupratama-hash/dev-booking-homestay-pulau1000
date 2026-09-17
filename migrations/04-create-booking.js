@@ -16,10 +16,22 @@ module.exports = {
         type: Sequelize.DATE
       },
       UserId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+        model: 'Users',
+        key: 'id'
+      },
+      onUpdate: 'cascade',
+      onDelete: 'cascade'
       },
       HomeStayId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+        model: 'Homestays',
+        key: 'id'
+      },
+      onUpdate: 'cascade',
+      onDelete: 'cascade'
       },
       createdAt: {
         allowNull: false,
