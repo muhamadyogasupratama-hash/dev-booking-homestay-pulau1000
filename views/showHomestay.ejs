@@ -25,7 +25,14 @@
 <body>
 
     <h1>Daftar Homestay Tersedia</h1>
-
+    <nav>
+        <a href="" class="btn">
+            Profile
+        </a>
+        <a href="" class="btn">
+           Logout
+        </a>
+    </nav><br>
     <div class="container">
         <% homestays.forEach(element => { %>
             <div class="card">
@@ -35,7 +42,7 @@
                     <div>
                         <h3 class="card-title"><%= element.name %></h3>
                         
-                        <p class="card-text">Harga: <%= element.pricePerNight %></p>
+                        <p class="card-text">Harga: <%= element.formattedPrice  %></p>
                     </div>
 
                     <a href="/homestays/<%= element.id %>" class="btn">Lihat Detail</a>

@@ -31,7 +31,7 @@
 
                 <div class="info-row">
                     <span class="info-label">Harga Per Malam:</span>
-                    <span class="info-value" style="color: #28a745; font-weight: bold;">Rp <%= homestay.pricePerNight %></span>
+                    <span class="info-value" style="color: #28a745; font-weight: bold;"><%= homestay.formattedPrice %></span>
                 </div>
 
                 <div class="info-row">
@@ -44,7 +44,7 @@
                     <span class="info-value"><%= homestay.contactPIC %></span>
                 </div>
 
-                <a href="/homestays/:id/booking" class="btn-back">Booking</a>
+                <a href="/homestays/<%= homestay.id %>/booking" class="btn-back">Booking</a>
                 <a href="/homestays" class="btn-back">Kembali ke Daftar</a>
             </div>
     </div>
