@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+</head>
+<body style="background-color: rgb(245, 240, 235); font-family: Arial, sans-serif; padding: 20px;">
+
+    <h1 style="color: rgb(35, 35, 114); text-align: center;">My Booking History</h1>
+    
+    <div style="margin-bottom: 20px; text-align: center;">
+        <a href="/homestays"><button style="padding: 8px 15px; background-color: antiquewhite; cursor: pointer;">Home</button></a>
+    </div>
+
+    <% if (myBooking && myBooking.length > 0) { %>
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; background-color: white; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: rgb(35, 35, 114); color: white; text-align: center;">
+                    <th>No</th>
+                    <th>Homestay Name</th>
+                    <th>Image</th>
+                    <th>Check-In Date</th>
+                    <th>Check-Out Date</th>
+                    <th>Contact PIC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% myBooking.forEach((booking, index) => { %>
+                    <tr>
+                        <td style="text-align: center;"><%= index + 1 %></td>
+                        <td><%= booking.Homestay ? booking.Homestay.name : 'Homestay not found' %></td>
+                        <td style="text-align: center;">
+                            <% if (booking.Homestay && booking.Homestay.imageUrl) { %>
+                                <img src="<%= booking.Homestay.imageUrl %>" alt="Homestay Image" width="100" style="border-radius: 5px;">
+                            <% } else { %>
+                                <span>No Image</span>
+                            <% } %>
+                        </td>
+                        <td style="text-align: center;">
+                            <%= booking.checkInDate ? moment(booking.checkInDate).format('LLLL') : '-' %>
+                        </td>
+                        <td style="text-align: center;">
+                            <%= booking.checkOutDate ? moment(booking.checkOutDate).format('LLLL') : '-' %>
+                        </td>
+                        <td style="text-align: center;">
+                            <%= booking.Homestay ? booking.Homestay.contactPIC : '-' %>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <p style="text-align: center; color: gray; font-size: 18px;">You don't have any bookings yet.</p>
+    <% } %>
+
+</body>
+</html>

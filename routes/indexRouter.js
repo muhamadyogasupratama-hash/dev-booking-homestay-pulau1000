@@ -4,7 +4,6 @@ const homestaysRouter = require('./homestaysRouter')
 const adminRouter = require('./adminRouter')
 const UserController = require('../controllers/userController')
 
-
 router.get('/', UserController.landingPage)
 router.post('/', UserController.landingPageLogin)
 router.use('/users', usersRouter)

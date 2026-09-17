@@ -1,6 +1,7 @@
 const {Homestay, Amnesty, Booking, HomestayAmenity, Profile, User} = require('../models/index')
 const {formatRupiah} = require("../helpers/formatRupiah")
 const bcrypt = require('bcryptjs')
+const moment = require('moment')
 // const salt = bcrypt.genSaltSync(10);
 // const hash = bcrypt.hashSync("B4c0/\/", salt);
 
@@ -88,12 +89,13 @@ class UserController {
 
     static async registerUserPost(req, res) {
         try {
-            const {name, email, password} = req.body
+            const {name, noHp, email, password} = req.body
 
             // console.log(name);
             // console.log(email);
             // console.log(password);
-            await User.create({name, email, password})
+            const newUser = await User.create({email, password})
+            await Profile.create({name, noHp, UserId: newUser.id})
 
             res.redirect('/')
         } catch (error) {
@@ -112,10 +114,11 @@ class UserController {
     static async showHomestays (req, res) {
         try {
             let homestays = await Homestay.findAll()
-
+            let userId = req.session.userId
+            // console.log(req.session.userId);
             // console.log(homestays);
 
-            res.render('showHomestay', {homestays})
+            res.render('showHomestay', {homestays, userId})
 
             // res.send("Welcome to Homestay")
 
@@ -183,14 +186,46 @@ class UserController {
     
     static async showProfile(req, res) {
         try {
-            
-            const profile = await Profile.findByPk({})
+            const userId = req.session.userId
+            // console.log(userId);
+            const profile = await Profile.findOne({
+                where: {UserId: userId},
+                include: User
+            })
+            // console.log(profile.User.email);
+
+            res.render('myProfile', {profile})
         } catch (error) {
-            
+            res.send(error)
+            console.log(error);
         }
     }
 
-    
+    static async myBooking(req, res) {
+        try {
+            const userId = req.session.userId
+
+            const myBooking = await Booking.findAll({
+                where: {
+                    UserId: userId
+                },
+                include: [
+                    {model: Homestay,
+                        // include: [
+                        //     {model: Amnesty}
+                        // ]
+                    }
+                ]
+            })
+            console.log(myBooking);
+            res.render('myBooking', {myBooking, moment})
+
+        } catch (error) {
+            res.send(error)
+            console.log(error);
+            
+        }
+    }
 
     
 }

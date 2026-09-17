@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body style="background-color: rgb(210, 187, 153); font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 380px; text-align: center;">
+        <h1 style="color: rgb(35, 35, 114); margin-bottom: 20px;">My Profile</h1>
+
+        <div style="margin-bottom: 20px;">
+            <img src="<%= profile.profilePicture || 'https://via.placeholder.com/120' %>" 
+                 alt="Profile Picture" 
+                 style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid rgb(35, 35, 114);">
+        </div>
+
+        <div style="text-align: left; font-size: 14px; color: #333; line-height: 1.6;">
+            
+            <div style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                <strong style="color: #666; font-size: 12px; display: block;">Nama Lengkap</strong>
+                <span style="font-size: 15px; font-weight: bold;"><%= profile.name %></span>
+            </div>
+
+            <div style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                <strong style="color: #666; font-size: 12px; display: block;">No. HP</strong>
+                <span style="font-size: 15px; font-weight: bold;"><%= profile.noHp %></span>
+            </div>
+
+            <div style="margin-bottom: 12px; padding-bottom: 8px;">
+                <strong style="color: #666; font-size: 12px; display: block;">Email (Login)</strong>
+                <span style="font-size: 15px; font-weight: bold;"><%= profile.User ? profile.User.email : '-' %></span>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 25px; display: flex; justify-content: space-between; gap: 10px;">
+            <a href="/profile/edit" style="flex: 1; background-color: rgb(35, 35, 114); color: white; padding: 10px 0; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 14px; text-align: center;">Edit Profile</a>
+            <a href="/homestays" style="flex: 1; background-color: #6c757d; color: white; padding: 10px 0; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 14px; text-align: center;">Kembali</a>
+        </div>
+    </div>
+
+</body>
+</html>

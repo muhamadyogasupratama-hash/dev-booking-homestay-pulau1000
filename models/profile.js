@@ -15,8 +15,35 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Profile.init({
-    name: DataTypes.STRING,
-    noHp: DataTypes.STRING,
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Name is required"
+        },
+        notEmpty: {
+          msg: "Name is required"
+        },
+        len: {
+          args: [3, 255],
+          msg: "Full name at least 3 charracters"
+        }
+      }
+    },
+    noHp: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Phone number is required"
+        },
+        notEmpty: {
+          msg: "Phone number is required"
+        }
+      }
+
+    },
     profilePicture: DataTypes.STRING,
     UserId: DataTypes.INTEGER
   }, {
