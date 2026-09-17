@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Administrator Homestay",
+    "noHp": "081210000001",
+    "profilePicture": "https://i.pravatar.cc/300?img=12",
+    "UserId": 1
+  },
+  {
+    "id": 2,
+    "name": "Budi Santoso",
+    "noHp": "081210000002",
+    "profilePicture": "https://i.pravatar.cc/300?img=11",
+    "UserId": 2
+  },
+  {
+    "id": 3,
+    "name": "Siti Rahma",
+    "noHp": "081210000003",
+    "profilePicture": "https://i.pravatar.cc/300?img=47",
+    "UserId": 3
+  }
+]

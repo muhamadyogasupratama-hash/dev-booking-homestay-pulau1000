@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Paket Standard - Perlengkapan mandi, AC, dan TV cable"
+  },
+  {
+    "id": 2,
+    "name": "Paket Premium - Perlengkapan mandi, AC, TV cable, dan sarapan"
+  },
+  {
+    "id": 3,
+    "name": "Paket Lux - Perlengkapan mandi, AC, TV cable, sarapan, dan makan malam"
+  }
+]
