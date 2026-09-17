@@ -11,15 +11,19 @@
         h1 { font-size: 22px; color: #333; margin: 0; }
         .btn-logout { background-color: #dc3545; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px; font-weight: bold; }
         .btn-logout:hover { background-color: #c82333; }
+        .header-actions { display: flex; align-items: center; gap: 8px; }
+        .btn-add { background-color: #28a745; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px; font-weight: bold; }
+        .btn-add:hover { background-color: #218838; }
         table { width: 100%; border-collapse: collapse; margin-top: 10px; }
         th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #dee2e6; font-size: 14px; }
         th { background-color: #343a40; color: white; }
         tr:hover { background-color: #f8f9fa; }
         .btn-edit { background-color: #ffc107; color: #212529; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; font-size: 13px; }
         .btn-edit:hover { background-color: #e0a800; }
-        .btn-delete { background-color: #dc3545; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; font-size: 13px; }
+        .btn-delete { background-color: #dc3545; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; display: inline-block; font-size: 13px; }
         .btn-delete:hover { background-color: #c82333; }
         .action-buttons { display: flex; gap: 8px; }
+        .action-buttons form { margin: 0; }
     </style>
 </head>
 <body>
@@ -27,8 +31,11 @@
     <div class="container">
         <div class="header">
             <h1>List Homestay Available (Admin)</h1>
-            <a href="" class="btn-edit">Waiting Approval Booking</a>
-            <a href="/logout" class="btn-logout">Logout</a>
+            <div class="header-actions">
+                <a href="/admin/homestays/add" class="btn-add">Add Homestay</a>
+                <a href="" class="btn-edit">Waiting Approval Booking</a>
+                <a href="/logout" class="btn-logout">Logout</a>
+            </div>
         </div>
 
         <table>
@@ -51,7 +58,9 @@
                     <td>
                         <div class="action-buttons">
                             <a href="/admin/homestays/<%= element.id %>/edit" class="btn-edit">Edit</a>
-                            <a href="/admin/homestays/<%= element.id %>/delete" class="btn-delete" onclick="return confirm('Yakin ingin menghapus data ini?')">Delete</a>
+                            <form action="/admin/homestays/<%= element.id %>/delete" method="POST" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
+                                <button type="submit" class="btn-delete">Delete</button>
+                            </form>
                         </div>
                     </td>
                 </tr>
