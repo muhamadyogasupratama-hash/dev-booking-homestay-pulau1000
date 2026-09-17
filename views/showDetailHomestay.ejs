@@ -1,57 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Homestay</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 40px; display: flex; justify-content: center; align-items: center; min-height: 80vh; }
-        
-        .detail-card { background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 450px; overflow: hidden; display: flex; flex-direction: column; }
-        
-        .detail-card img { width: 100%; height: 250px; object-fit: cover; }
-        
-        .content { padding: 25px; }
-        h1 { font-size: 24px; color: #333; margin-top: 0; margin-bottom: 15px; }
-        .info-row { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 15px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-        .info-label { font-weight: bold; color: #555; }
-        .info-value { color: #333; }
-        
-        .btn-back { display: block; text-align: center; background-color: #6c757d; color: white; padding: 10px; text-decoration: none; border-radius: 5px; margin-top: 20px; font-weight: bold; }
-        .btn-back:hover { background-color: #5a6268; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detail homestay di Pulau Seribu.">
+  <title>Detail Homestay — Pulau Seribu Stay</title>
+  <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-
-    <div class="detail-card">
-            <img src="<%= homestay.imageUrl %>" alt="Foto Homestay">
-            
-            <div class="content">
-                <h1>Detail Informasi Homestay</h1>
-
-                <div class="info-row">
-                    <span class="info-label">Harga Per Malam:</span>
-                    <span class="info-value" style="color: #28a745; font-weight: bold;"><%= homestay.formattedPrice %></span>
-                </div>
-
-                <div class="info-row">
-                    <span class="info-label">Kamar Tersedia:</span>
-                    <span class="info-value"><%= homestay.roomAvailable %> Kamar</span>
-                </div>
-
-                <div class="info-row">
-                    <span class="info-label">Kontak PIC:</span>
-                    <span class="info-value"><%= homestay.contactPIC %></span>
-                </div>
-
-                <% if (userRole === "admin") { %>
-                    <a href="/admin/homestays/<%= homestay.id %>/edit" class="btn-back">Edit Homestay</a>
-                <% } else { %>
-                    <a href="/homestays/<%= homestay.id %>/booking" class="btn-back">Booking</a>
-                <% } %>
-                <a href="/homestays" class="btn-back">Kembali ke Daftar</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a href="<%= userRole === 'admin' ? '/admin' : '/homestays' %>" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 19h18M5 16l3-5 3 3 4-7 4 9"/><path d="M4 19c3-2 5-2 8 0 3-2 5-2 8 0"/></svg></span><span class="brand-text">Pulau Seribu Stay</span></a>
+        <div class="nav-actions"><a href="/logout" class="btn btn-secondary btn-sm">Keluar</a></div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <article class="card detail-card">
+          <img class="detail-image" src="<%= homestay.imageUrl %>" alt="Foto <%= homestay.name %>">
+          <div class="detail-content">
+            <p class="eyebrow">Detail homestay</p><h1><%= homestay.name %></h1><p class="detail-lead">Informasi penting yang perlu kamu ketahui sebelum melanjutkan.</p>
+            <dl class="detail-list">
+              <div class="detail-row"><dt>Harga per malam</dt><dd class="detail-price"><%= homestay.formattedPrice %></dd></div>
+              <div class="detail-row"><dt>Kamar tersedia</dt><dd><%= homestay.roomAvailable %> kamar</dd></div>
+              <div class="detail-row"><dt>Kontak PIC</dt><dd><%= homestay.contactPIC %></dd></div>
+            </dl>
+            <div class="detail-actions">
+              <a href="/homestays" class="btn btn-secondary">Kembali ke daftar</a>
+              <% if (userRole === "admin") { %><a href="/admin/homestays/<%= homestay.id %>/edit" class="btn btn-edit">Edit homestay</a><% } else { %><a href="/homestays/<%= homestay.id %>/booking" class="btn btn-primary">Booking sekarang</a><% } %>
             </div>
-    </div>
-
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Pulau Seribu Stay</span><span>Temukan nyaman di setiap pulau.</span></div></footer>
+  </div>
 </body>
 </html>
