@@ -10,7 +10,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       AmenityId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+        model: 'Amnesties',
+        key: 'id'
+      },
+      onUpdate: 'cascade',
+      onDelete: 'cascade'
       },
       createdAt: {
         allowNull: false,
