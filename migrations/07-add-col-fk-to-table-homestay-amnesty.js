@@ -10,7 +10,18 @@ module.exports = {
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
 
-    queryInterface.addColumn('HomestayAmenities', 'HomeStayId', Sequelize.INTEGER, {});
+    queryInterface.addColumn('HomestayAmenities', 'HomeStayId',
+      {
+      type: Sequelize.INTEGER,
+      references: {
+        model: 'Homestays',
+        key: 'id'
+      },
+      onUpdate: 'cascade',
+      onDelete: 'cascade'
+      },
+    
+    {});
   },
 
   async down (queryInterface, Sequelize) {
