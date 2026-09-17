@@ -1,10 +1,10 @@
 const {Homestay, Amnesty, Booking, HomestayAmenity, Profile, User} = require('../models/index')
 const {formatRupiah} = require("../helpers/formatRupiah")
 const bcrypt = require('bcryptjs')
-const salt = bcrypt.genSaltSync(10);
-const hash = bcrypt.hashSync("B4c0/\/", salt);
+// const salt = bcrypt.genSaltSync(10);
+// const hash = bcrypt.hashSync("B4c0/\/", salt);
 
-class Controller {
+class UserController {
     static async landingPage(req, res) {
         try {
             const {errors} = req.query
@@ -30,13 +30,21 @@ class Controller {
                     email: email
                 }
             })
+            // console.log(user);
 
             if (user) {
                 const isValidPassword = await bcrypt.compare(password, user.password)
+                // console.log(isValidPassword);
                 if (isValidPassword) {
-                    req.session.userId = user
                     req.session.userId = user.id
-                    return res.redirect('/homestays')
+                    req.session.userRole = user.role
+
+                    if (user.role === "admin") {
+                        res.redirect('/admin')
+                    }
+                    else {
+                        return res.redirect('/homestays')
+                    }
                 }
                 else {
                     const error = "Invalid email/password"
@@ -53,6 +61,21 @@ class Controller {
             res.send(error)
         }
     }
+
+    static async logoutUser(req, res) {
+        try {
+            req.session.destroy(function (err) {
+                if(err) {
+                    console.log(err);
+                }
+                res.redirect('/')
+            });
+        } catch (error) {
+            res.send(error)
+            console.log(error);
+        }
+    }
+
 
     static async registerUser(req, res) {
         try {
@@ -74,8 +97,15 @@ class Controller {
 
             res.redirect('/')
         } catch (error) {
-            res.send(error)
-            console.log(error);
+            if (error.name === "SequelizeValidationError") {
+                const errors = error.errors.map(err => err.message)
+                return res.render('registerUser', {errors})
+            }
+            else {
+                res.send(error)
+                console.log(error);
+
+            }
         }
     }
 
@@ -151,10 +181,6 @@ class Controller {
     }
 
     
-    
-
-
-
     static async showProfile(req, res) {
         try {
             
@@ -165,7 +191,9 @@ class Controller {
     }
 
     
+
+    
 }
 
 
-module.exports = Controller
+module.exports = UserController

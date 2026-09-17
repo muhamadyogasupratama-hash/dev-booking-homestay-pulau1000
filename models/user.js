@@ -13,11 +13,43 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      User.hasOne(models.Profile, {foreignKey: 'UserId'})
+      User.hasMany(models.Booking, {foreignKey: 'UserId'})
+      
     }
   }
   User.init({
-    email: DataTypes.STRING,
-    password: DataTypes.STRING,
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Email is required"
+        },
+        notEmpty: {
+          msg: "Email is required"
+        },
+        isEmail: {
+          msg: "Invalid email format"
+        }
+      }
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Password is required"
+        },
+        notEmpty: {
+          msg: "Password is required"
+        },
+        len: {
+          args: [6, 15],
+          msg: "Password must be at least 6 characters long"
+        }
+      }
+    },
     role: DataTypes.STRING
   }, {
     sequelize,
@@ -30,12 +62,6 @@ module.exports = (sequelize, DataTypes) => {
   user.password = hash
   user.role = "customer"
 });
-//   User.beforeCreate(async (instance, options) => {
-//   const salt = await bcrypt.genSalt(10);
-//   const hash = await bcrypt.hash(instance, salt);
-
-//   instance.password = hash
-// });
 
 
   return User;

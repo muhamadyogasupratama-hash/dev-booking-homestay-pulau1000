@@ -1,11 +1,14 @@
 const router = require('express').Router()
 const usersRouter = require('./usersRouter')
 const homestaysRouter = require('./homestaysRouter')
-const Controller = require('../controllers/controller')
+const adminRouter = require('./adminRouter')
+const UserController = require('../controllers/userController')
 
 
-router.get('/', Controller.landingPage)
-router.post('/', Controller.landingPageLogin)
+router.get('/', UserController.landingPage)
+router.post('/', UserController.landingPageLogin)
+router.use('/users', usersRouter)
+
 
 router.use(function(req, res, next){
     // console.log(req.session);
@@ -17,8 +20,23 @@ router.use(function(req, res, next){
         next()
     }
 })
+
+router.get('/logout', UserController.logoutUser)
 router.use('/homestays', homestaysRouter)
-router.use('/users', usersRouter)
+
+router.use(function(req, res, next){
+    // console.log(req.session);
+    if (req.session.userRole === "admin") {
+        next()
+    } else {
+        const error = "Access denied! You are not an admin"
+        res.redirect(`/?errors=${error}`)
+    }
+})
+
+router.use('/admin', adminRouter)
+
+
 
 
 

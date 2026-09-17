@@ -13,6 +13,9 @@ module.exports = (sequelize, DataTypes) => {
       HomestayAmenity.belongsTo(models.Amnesty, {
         foreignKey: 'AmenityId',
       });
+      HomestayAmenity.belongsTo(models.Homestay, {
+        foreignKey: 'HomeStayId',
+      });
     }
   }
   HomestayAmenity.init({

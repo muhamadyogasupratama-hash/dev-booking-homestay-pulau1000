@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - List Homestay</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 30px; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        h1 { font-size: 22px; color: #333; margin: 0; }
+        .btn-logout { background-color: #dc3545; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px; font-weight: bold; }
+        .btn-logout:hover { background-color: #c82333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #dee2e6; font-size: 14px; }
+        th { background-color: #343a40; color: white; }
+        tr:hover { background-color: #f8f9fa; }
+        .btn-edit { background-color: #ffc107; color: #212529; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; font-size: 13px; }
+        .btn-edit:hover { background-color: #e0a800; }
+        .btn-delete { background-color: #dc3545; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; font-size: 13px; }
+        .btn-delete:hover { background-color: #c82333; }
+        .action-buttons { display: flex; gap: 8px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>List Homestay Available (Admin)</h1>
+            <a href="" class="btn-edit">Waiting Approval Booking</a>
+            <a href="/logout" class="btn-logout">Logout</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Homestay Name</th>
+                    <th>Price Per Night</th>
+                    <th>Room Available</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% homestays.forEach((element, index) => { %>
+                <tr>
+                    <td><%= index + 1 %></td>
+                    <td><%= element.name %></td>
+                    <td> <%= element.formattedPrice %></td>
+                    <td><%= element.roomAvailable %> Kamar</td>
+                    <td>
+                        <div class="action-buttons">
+                            <a href="/admin/homestays/<%= element.id %>/edit" class="btn-edit">Edit</a>
+                            <a href="/admin/homestays/<%= element.id %>/delete" class="btn-delete" onclick="return confirm('Yakin ingin menghapus data ini?')">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
