@@ -25,7 +25,7 @@ class Controller {
             
 
         } catch (error) {
-            
+            res.send(error)
         }
     }
 
@@ -56,6 +56,8 @@ class Controller {
 
     static async showHomestays (req, res) {
         try {
+            // const homestays = 
+
             res.send("Welcome to Homestay")
 
         } catch (error) {
