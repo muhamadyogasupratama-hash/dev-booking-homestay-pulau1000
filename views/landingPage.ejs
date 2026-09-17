@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Booking Homestay Pulau 1000</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f6f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 320px; text-align: center; }
-        h1 { font-size: 22px; color: #333; margin-bottom: 20px; }
-        input[type="text"], input[type="password"] { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
-        input[type="submit"] { background-color: #007bff; color: white; border: none; padding: 10px 20px; width: 100%; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 10px; }
-        input[type="submit"]:hover { background-color: #0056b3; }
-        .link-text { margin-top: 15px; font-size: 14px; color: #666; }
-        .link-text a { color: #007bff; text-decoration: none; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Masuk ke aplikasi Booking Homestay Pulau Seribu.">
+  <title>Masuk — Pulau Seribu Stay</title>
+  <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <div class="card">
-        <h1>Homestay Pulau 1000</h1>
-
-        <% if (errors) { %>
-        <div style="color: red ;" class="alert alert-danger" role="alert">
-            <%= errors %>
+  <main class="auth-page">
+    <section class="auth-visual" aria-label="Tentang Pulau Seribu Stay">
+      <a href="/" class="brand auth-brand">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 19h18M5 16l3-5 3 3 4-7 4 9"/><path d="M4 19c3-2 5-2 8 0 3-2 5-2 8 0"/></svg></span>
+        <span>Pulau Seribu Stay</span>
+      </a>
+      <div class="auth-message">
+        <p class="eyebrow eyebrow--light">Temukan tempat terbaik</p>
+        <h1>Liburan pulau dimulai dari sini.</h1>
+        <p>Pilih homestay yang nyaman dan rencanakan waktu istirahatmu dengan lebih mudah.</p>
+      </div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-card">
+        <div class="form-header">
+          <p class="eyebrow">Selamat datang</p>
+          <h1>Masuk ke akunmu</h1>
+          <p>Gunakan email dan password yang telah terdaftar.</p>
         </div>
-        <% } %>
-        
+        <% if (errors) { %><div class="alert" role="alert"><%= errors %></div><% } %>
         <form action="/" method="post">
-            <input type="text" name="email" placeholder="Email"><br>
-            <input type="password" name="password" placeholder="Password"><br>
-            <input type="submit" value="Login">
+          <div class="form-group"><label for="email">Email</label><input type="text" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required></div>
+          <div class="form-group"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Masukkan password" autocomplete="current-password" required></div>
+          <button type="submit" class="btn btn-primary btn-block">Masuk</button>
         </form>
-
-        <div class="link-text">
-            Belum punya akun? <a href="/users/register">Register di sini</a>
-        </div>
-    </div>
+        <p class="auth-footer">Belum punya akun? <a href="/users/register">Daftar sekarang</a></p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

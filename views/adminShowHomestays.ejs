@@ -1,73 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - List Homestay</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 30px; color: #333; }
-        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        h1 { font-size: 22px; color: #333; margin: 0; }
-        .btn-logout { background-color: #dc3545; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px; font-weight: bold; }
-        .btn-logout:hover { background-color: #c82333; }
-        .header-actions { display: flex; align-items: center; gap: 8px; }
-        .btn-add { background-color: #28a745; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-size: 14px; font-weight: bold; }
-        .btn-add:hover { background-color: #218838; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #dee2e6; font-size: 14px; }
-        th { background-color: #343a40; color: white; }
-        tr:hover { background-color: #f8f9fa; }
-        .btn-edit { background-color: #ffc107; color: #212529; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; font-size: 13px; }
-        .btn-edit:hover { background-color: #e0a800; }
-        .btn-delete { background-color: #dc3545; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; display: inline-block; font-size: 13px; }
-        .btn-delete:hover { background-color: #c82333; }
-        .action-buttons { display: flex; gap: 8px; }
-        .action-buttons form { margin: 0; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard pengelolaan homestay.">
+  <title>Dashboard Admin — Pulau Seribu Stay</title>
+  <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigasi admin">
+        <a href="/admin" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 19h18M5 16l3-5 3 3 4-7 4 9"/><path d="M4 19c3-2 5-2 8 0 3-2 5-2 8 0"/></svg></span><span class="brand-text">Pulau Seribu Stay</span></a>
+        <div class="nav-actions"><span class="badge">Admin</span><a href="" class="nav-link">Persetujuan Booking</a><a href="/logout" class="btn btn-secondary btn-sm">Keluar</a></div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <header class="page-header">
+          <div><p class="eyebrow">Dashboard admin</p><h1>Kelola homestay</h1><p class="page-description">Lihat ketersediaan dan perbarui informasi seluruh homestay dari satu tempat.</p></div>
+          <a href="/admin/homestays/add" class="btn btn-primary">+ Tambah homestay</a>
+        </header>
 
-    <div class="container">
-        <div class="header">
-            <h1>List Homestay Available (Admin)</h1>
-            <div class="header-actions">
-                <a href="/admin/homestays/add" class="btn-add">Add Homestay</a>
-                <a href="" class="btn-edit">Waiting Approval Booking</a>
-                <a href="/logout" class="btn-logout">Logout</a>
+        <% if (homestays.length) { %>
+          <section class="card table-card table-card-bleed" aria-label="Daftar homestay">
+            <div class="table-responsive">
+              <table>
+                <thead><tr><th scope="col">No.</th><th scope="col">Nama homestay</th><th scope="col">Harga / malam</th><th scope="col">Ketersediaan</th><th scope="col">Aksi</th></tr></thead>
+                <tbody>
+                  <% homestays.forEach((element, index) => { %>
+                    <tr>
+                      <td><%= index + 1 %></td>
+                      <td class="table-primary"><%= element.name %></td>
+                      <td><%= element.formattedPrice %></td>
+                      <td><span class="badge"><%= element.roomAvailable %> kamar</span></td>
+                      <td><div class="table-actions"><a href="/admin/homestays/<%= element.id %>/edit" class="btn btn-edit btn-sm">Edit</a><form action="/admin/homestays/<%= element.id %>/delete" method="POST" onsubmit="return confirm('Yakin ingin menghapus data ini?')"><button type="submit" class="btn btn-danger btn-sm">Hapus</button></form></div></td>
+                    </tr>
+                  <% }) %>
+                </tbody>
+              </table>
             </div>
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Homestay Name</th>
-                    <th>Price Per Night</th>
-                    <th>Room Available</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% homestays.forEach((element, index) => { %>
-                <tr>
-                    <td><%= index + 1 %></td>
-                    <td><%= element.name %></td>
-                    <td> <%= element.formattedPrice %></td>
-                    <td><%= element.roomAvailable %> Kamar</td>
-                    <td>
-                        <div class="action-buttons">
-                            <a href="/admin/homestays/<%= element.id %>/edit" class="btn-edit">Edit</a>
-                            <form action="/admin/homestays/<%= element.id %>/delete" method="POST" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
-                                <button type="submit" class="btn-delete">Delete</button>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-                <% }) %>
-            </tbody>
-        </table>
-    </div>
-
+          </section>
+        <% } else { %>
+          <section class="card empty-state"><div class="empty-state-icon" aria-hidden="true">⌂</div><h2>Belum ada data homestay</h2><p>Tambahkan homestay pertama untuk mulai mengelola daftar.</p><a href="/admin/homestays/add" class="btn btn-primary">Tambah homestay</a></section>
+        <% } %>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Pulau Seribu Stay</span><span>Dashboard pengelolaan homestay</span></div></footer>
+  </div>
 </body>
 </html>

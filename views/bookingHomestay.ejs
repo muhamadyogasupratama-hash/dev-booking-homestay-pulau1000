@@ -1,115 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Booking Homestay</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f6f9;
-        margin: 0;
-        padding: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 80vh;
-      }
-      .card {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        width: 380px;
-      }
-      h1 {
-        font-size: 20px;
-        color: #333;
-        margin-top: 0;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      .form-group {
-        margin-bottom: 15px;
-      }
-      label {
-        display: block;
-        font-size: 14px;
-        font-weight: bold;
-        color: #555;
-        margin-bottom: 5px;
-      }
-     .form-group input,
-    .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    }
-      input[type="submit"] {
-        background-color: #28a745;
-        color: white;
-        border: none;
-        padding: 10px;
-        width: 100%;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-        margin-top: 10px;
-      }
-      input[type="submit"]:hover {
-        background-color: #218838;
-      }
-      .btn-back {
-        display: block;
-        text-align: center;
-        background-color: #6c757d;
-        color: white;
-        padding: 8px;
-        text-decoration: none;
-        border-radius: 4px;
-        margin-top: 10px;
-        font-size: 14px;
-      }
-      .btn-back:hover {
-        background-color: #5a6268;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Form Booking Homestay</h1>
-
-      <form action="/homestays/<%= homestay.id %>/booking" method="POST">
-        <div class="form-group">
-          <label for="checkInDate">Tanggal Check-In:</label>
-          <input type="date" id="checkInDate" name="checkInDate" required />
-        </div>
-
-        <div class="form-group">
-          <label for="checkOutDate">Tanggal Check-Out:</label>
-          <input type="date" id="checkOutDate" name="checkOutDate" required />
-        </div>
-
-        <div class="form-group">
-        <label for="amenity">Amenity:</label>
-        <select name="amenityId">
-        <% amnesty.forEach(el => { %>
-            <option value="<%= el.id %>">
-                <%= el.name %>
-            </option>
-        <% }) %>
-       
-        </select>
-        </div>
-
-        <input type="hidden" name="userId" value="ejsoutUserId" />
-
-        <input type="submit" value="Konfirmasi Booking" />
-      </form>
-
-      <a href="/homestays/<%= homestay.id %>" class="btn-back">Batal</a>
-    </div>
-  </body>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form booking homestay Pulau Seribu.">
+  <title>Booking Homestay — Pulau Seribu Stay</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a href="/homestays" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 19h18M5 16l3-5 3 3 4-7 4 9"/><path d="M4 19c3-2 5-2 8 0 3-2 5-2 8 0"/></svg></span><span class="brand-text">Pulau Seribu Stay</span></a>
+        <div class="nav-actions"><a href="/logout" class="btn btn-secondary btn-sm">Keluar</a></div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="container--narrow">
+        <section class="card form-card">
+          <header class="form-header"><p class="eyebrow">Reservasi homestay</p><h1>Atur jadwal menginap</h1><p>Lengkapi detail booking untuk <strong><%= homestay.name %></strong>.</p></header>
+          <form action="/homestays/<%= homestay.id %>/booking" method="POST">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="checkInDate">Tanggal check-in <span class="required" aria-hidden="true">*</span></label>
+                <input type="date" id="checkInDate" name="checkInDate" required>
+              </div>
+              <div class="form-group">
+                <label for="checkOutDate">Tanggal check-out <span class="required" aria-hidden="true">*</span></label>
+                <input type="date" id="checkOutDate" name="checkOutDate" required>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="amenityId">Amenity</label>
+                <select id="amenityId" name="amenityId">
+                  <% amnesty.forEach(el => { %><option value="<%= el.id %>"><%= el.name %></option><% }) %>
+                </select>
+              </div>
+            </div>
+            <input type="hidden" name="userId" value="ejsoutUserId">
+            <div class="form-actions"><a href="/homestays/<%= homestay.id %>" class="btn btn-secondary">Batal</a><button type="submit" class="btn btn-primary">Konfirmasi booking</button></div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Pulau Seribu Stay</span><span>Temukan nyaman di setiap pulau.</span></div></footer>
+  </div>
+</body>
 </html>
