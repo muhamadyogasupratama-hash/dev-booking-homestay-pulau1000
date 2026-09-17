@@ -1,12 +1,16 @@
 const router = require('express').Router()
-const Controller = require('../controllers/controller')
+const UserController = require('../controllers/userController')
+const AdminController = require('../controllers/adminController')
 
 
-router.get('/', Controller.showHomestays)
-// router.get()
-router.get('/:id', Controller.showDetailHomestay)
-router.get('/:id/booking', Controller.bookingHomestay)
-router.post('/:id/booking', Controller.postBookingHomestay)
+router.get('/', UserController.showHomestays)
+
+router.get('/admin', AdminController.showHomestaysAdmin)
+router.get('/:id', UserController.showDetailHomestay)
+router.get('/:id/booking', UserController.bookingHomestay)
+router.post('/:id/booking', UserController.postBookingHomestay)
+router.get("/edit/:id", AdminController.getEditHomestay)
+router.post("/edit/:id", AdminController.postEditHomestay)
 
 
 
