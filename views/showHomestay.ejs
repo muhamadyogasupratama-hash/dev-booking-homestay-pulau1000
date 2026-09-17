@@ -1,58 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Homestay - Pulau 1000</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
-        h1 { text-align: center; color: #333; margin-bottom: 30px; }
-        
-        .container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-        
-        .card { background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 280px; overflow: hidden; display: flex; flex-direction: column; }
-        
-        .card img { width: 100%; height: 160px; object-fit: cover; }
-        
-        .card-body { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-        .card-title { font-size: 18px; font-weight: bold; color: #333; margin: 0 0 10px 0; }
-        .card-text { font-size: 14px; color: #666; margin: 5px 0; }
-        
-        .btn { display: block; text-align: center; background-color: #007bff; color: white; padding: 8px; text-decoration: none; border-radius: 4px; margin-top: 10px; font-weight: bold; }
-        .btn:hover { background-color: #0056b3; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar homestay tersedia di Pulau Seribu.">
+  <title>Daftar Homestay — Pulau Seribu Stay</title>
+  <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-
-    <h1>Daftar Homestay Tersedia</h1>
-    <nav>
-        <a href="" class="btn">
-            My Profile
-        </a>
-        <a href="" class="btn">
-            My Booking
-        </a>
-        <a href="/logout" class="btn">
-           Logout
-        </a>
-    </nav><br>
-    <div class="container">
-        <% homestays.forEach(element => { %>
-            <div class="card">
-                <img src="<%= element.imageUrl %>" alt="<%= element.name %>">
-                
-                <div class="card-body">
-                    <div>
-                        <h3 class="card-title"><%= element.name %></h3>
-                        
-                        <p class="card-text">Harga: <%= element.formattedPrice  %></p>
-                    </div>
-
-                    <a href="/homestays/<%= element.id %>" class="btn">Lihat Detail</a>
-                </div>
-            </div>
-        <% }) %>
-    </div>
-
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a href="/homestays" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 19h18M5 16l3-5 3 3 4-7 4 9"/><path d="M4 19c3-2 5-2 8 0 3-2 5-2 8 0"/></svg></span><span class="brand-text">Pulau Seribu Stay</span></a>
+        <div class="nav-actions"><a href="" class="nav-link">Profil Saya</a><a href="" class="nav-link">Booking Saya</a><a href="/logout" class="btn btn-secondary btn-sm">Keluar</a></div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <header class="page-header"><div><p class="eyebrow">Pilihan menginap</p><h1>Temukan homestay yang tepat</h1><p class="page-description">Jelajahi pilihan homestay nyaman untuk melengkapi perjalananmu di Pulau Seribu.</p></div></header>
+        <% if (homestays.length) { %>
+          <section class="homestay-grid" aria-label="Daftar homestay tersedia">
+            <% homestays.forEach(element => { %>
+              <article class="card stay-card">
+                <img class="stay-card-image" src="<%= element.imageUrl %>" alt="<%= element.name %>" loading="lazy">
+                <div class="stay-card-content"><h2 class="stay-card-title"><%= element.name %></h2><p class="stay-card-meta">Mulai dari <span class="stay-card-price"><%= element.formattedPrice %></span> / malam</p><a href="/homestays/<%= element.id %>" class="btn btn-primary btn-block">Lihat detail</a></div>
+              </article>
+            <% }) %>
+          </section>
+        <% } else { %>
+          <section class="card empty-state"><div class="empty-state-icon" aria-hidden="true">⌂</div><h2>Belum ada homestay tersedia</h2><p>Silakan kembali lagi nanti untuk melihat pilihan terbaru.</p></section>
+        <% } %>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Pulau Seribu Stay</span><span>Temukan nyaman di setiap pulau.</span></div></footer>
+  </div>
 </body>
 </html>
