@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "checkInDate": "2026-10-01",
+    "checkOutDate": "2026-10-02",
+    "UserId": 2,
+    "HomeStayId": 1
+  },
+  {
+    "id": 2,
+    "checkInDate": "2026-10-03",
+    "checkOutDate": "2026-10-05",
+    "UserId": 3,
+    "HomeStayId": 8
+  },
+  {
+    "id": 3,
+    "checkInDate": "2026-10-05",
+    "checkOutDate": "2026-10-08",
+    "UserId": 2,
+    "HomeStayId": 15
+  },
+  {
+    "id": 4,
+    "checkInDate": "2026-10-07",
+    "checkOutDate": "2026-10-11",
+    "UserId": 3,
+    "HomeStayId": 22
+  },
+  {
+    "id": 5,
+    "checkInDate": "2026-10-09",
+    "checkOutDate": "2026-10-14",
+    "UserId": 2,
+    "HomeStayId": 29
+  },
+  {
+    "id": 6,
+    "checkInDate": "2026-10-11",
+    "checkOutDate": "2026-10-12",
+    "UserId": 3,
+    "HomeStayId": 36
+  },
+  {
+    "id": 7,
+    "checkInDate": "2026-10-13",
+    "checkOutDate": "2026-10-15",
+    "UserId": 2,
+    "HomeStayId": 43
+  },
+  {
+    "id": 8,
+    "checkInDate": "2026-10-15",
+    "checkOutDate": "2026-10-18",
+    "UserId": 3,
+    "HomeStayId": 50
+  },
+  {
+    "id": 9,
+    "checkInDate": "2026-10-17",
+    "checkOutDate": "2026-10-21",
+    "UserId": 2,
+    "HomeStayId": 57
+  },
+  {
+    "id": 10,
+    "checkInDate": "2026-10-19",
+    "checkOutDate": "2026-10-24",
+    "UserId": 3,
+    "HomeStayId": 64
+  },
+  {
+    "id": 11,
+    "checkInDate": "2026-10-21",
+    "checkOutDate": "2026-10-22",
+    "UserId": 2,
+    "HomeStayId": 71
+  },
+  {
+    "id": 12,
+    "checkInDate": "2026-10-23",
+    "checkOutDate": "2026-10-25",
+    "UserId": 3,
+    "HomeStayId": 78
+  },
+  {
+    "id": 13,
+    "checkInDate": "2026-10-25",
+    "checkOutDate": "2026-10-28",
+    "UserId": 2,
+    "HomeStayId": 85
+  },
+  {
+    "id": 14,
+    "checkInDate": "2026-10-27",
+    "checkOutDate": "2026-10-31",
+    "UserId": 3,
+    "HomeStayId": 92
+  },
+  {
+    "id": 15,
+    "checkInDate": "2026-10-29",
+    "checkOutDate": "2026-11-03",
+    "UserId": 2,
+    "HomeStayId": 99
+  },
+  {
+    "id": 16,
+    "checkInDate": "2026-10-31",
+    "checkOutDate": "2026-11-01",
+    "UserId": 3,
+    "HomeStayId": 6
+  },
+  {
+    "id": 17,
+    "checkInDate": "2026-11-02",
+    "checkOutDate": "2026-11-04",
+    "UserId": 2,
+    "HomeStayId": 13
+  },
+  {
+    "id": 18,
+    "checkInDate": "2026-11-04",
+    "checkOutDate": "2026-11-07",
+    "UserId": 3,
+    "HomeStayId": 20
+  },
+  {
+    "id": 19,
+    "checkInDate": "2026-11-06",
+    "checkOutDate": "2026-11-10",
+    "UserId": 2,
+    "HomeStayId": 27
+  },
+  {
+    "id": 20,
+    "checkInDate": "2026-11-08",
+    "checkOutDate": "2026-11-13",
+    "UserId": 3,
+    "HomeStayId": 34
+  },
+  {
+    "id": 21,
+    "checkInDate": "2026-11-10",
+    "checkOutDate": "2026-11-11",
+    "UserId": 2,
+    "HomeStayId": 41
+  },
+  {
+    "id": 22,
+    "checkInDate": "2026-11-12",
+    "checkOutDate": "2026-11-14",
+    "UserId": 3,
+    "HomeStayId": 48
+  },
+  {
+    "id": 23,
+    "checkInDate": "2026-11-14",
+    "checkOutDate": "2026-11-17",
+    "UserId": 2,
+    "HomeStayId": 55
+  },
+  {
+    "id": 24,
+    "checkInDate": "2026-11-16",
+    "checkOutDate": "2026-11-20",
+    "UserId": 3,
+    "HomeStayId": 62
+  },
+  {
+    "id": 25,
+    "checkInDate": "2026-11-18",
+    "checkOutDate": "2026-11-23",
+    "UserId": 2,
+    "HomeStayId": 69
+  },
+  {
+    "id": 26,
+    "checkInDate": "2026-11-20",
+    "checkOutDate": "2026-11-21",
+    "UserId": 3,
+    "HomeStayId": 76
+  },
+  {
+    "id": 27,
+    "checkInDate": "2026-11-22",
+    "checkOutDate": "2026-11-24",
+    "UserId": 2,
+    "HomeStayId": 83
+  },
+  {
+    "id": 28,
+    "checkInDate": "2026-11-24",
+    "checkOutDate": "2026-11-27",
+    "UserId": 3,
+    "HomeStayId": 90
+  },
+  {
+    "id": 29,
+    "checkInDate": "2026-11-26",
+    "checkOutDate": "2026-11-30",
+    "UserId": 2,
+    "HomeStayId": 97
+  },
+  {
+    "id": 30,
+    "checkInDate": "2026-11-28",
+    "checkOutDate": "2026-12-03",
+    "UserId": 3,
+    "HomeStayId": 4
+  },
+  {
+    "id": 31,
+    "checkInDate": "2026-11-30",
+    "checkOutDate": "2026-12-01",
+    "UserId": 2,
+    "HomeStayId": 11
+  },
+  {
+    "id": 32,
+    "checkInDate": "2026-12-02",
+    "checkOutDate": "2026-12-04",
+    "UserId": 3,
+    "HomeStayId": 18
+  },
+  {
+    "id": 33,
+    "checkInDate": "2026-12-04",
+    "checkOutDate": "2026-12-07",
+    "UserId": 2,
+    "HomeStayId": 25
+  },
+  {
+    "id": 34,
+    "checkInDate": "2026-12-06",
+    "checkOutDate": "2026-12-10",
+    "UserId": 3,
+    "HomeStayId": 32
+  },
+  {
+    "id": 35,
+    "checkInDate": "2026-12-08",
+    "checkOutDate": "2026-12-13",
+    "UserId": 2,
+    "HomeStayId": 39
+  },
+  {
+    "id": 36,
+    "checkInDate": "2026-12-10",
+    "checkOutDate": "2026-12-11",
+    "UserId": 3,
+    "HomeStayId": 46
+  },
+  {
+    "id": 37,
+    "checkInDate": "2026-12-12",
+    "checkOutDate": "2026-12-14",
+    "UserId": 2,
+    "HomeStayId": 53
+  },
+  {
+    "id": 38,
+    "checkInDate": "2026-12-14",
+    "checkOutDate": "2026-12-17",
+    "UserId": 3,
+    "HomeStayId": 60
+  },
+  {
+    "id": 39,
+    "checkInDate": "2026-12-16",
+    "checkOutDate": "2026-12-20",
+    "UserId": 2,
+    "HomeStayId": 67
+  },
+  {
+    "id": 40,
+    "checkInDate": "2026-12-18",
+    "checkOutDate": "2026-12-23",
+    "UserId": 3,
+    "HomeStayId": 74
+  },
+  {
+    "id": 41,
+    "checkInDate": "2026-12-20",
+    "checkOutDate": "2026-12-21",
+    "UserId": 2,
+    "HomeStayId": 81
+  },
+  {
+    "id": 42,
+    "checkInDate": "2026-12-22",
+    "checkOutDate": "2026-12-24",
+    "UserId": 3,
+    "HomeStayId": 88
+  },
+  {
+    "id": 43,
+    "checkInDate": "2026-12-24",
+    "checkOutDate": "2026-12-27",
+    "UserId": 2,
+    "HomeStayId": 95
+  },
+  {
+    "id": 44,
+    "checkInDate": "2026-12-26",
+    "checkOutDate": "2026-12-30",
+    "UserId": 3,
+    "HomeStayId": 2
+  },
+  {
+    "id": 45,
+    "checkInDate": "2026-12-28",
+    "checkOutDate": "2027-01-02",
+    "UserId": 2,
+    "HomeStayId": 9
+  },
+  {
+    "id": 46,
+    "checkInDate": "2026-12-30",
+    "checkOutDate": "2026-12-31",
+    "UserId": 3,
+    "HomeStayId": 16
+  },
+  {
+    "id": 47,
+    "checkInDate": "2027-01-01",
+    "checkOutDate": "2027-01-03",
+    "UserId": 2,
+    "HomeStayId": 23
+  },
+  {
+    "id": 48,
+    "checkInDate": "2027-01-03",
+    "checkOutDate": "2027-01-06",
+    "UserId": 3,
+    "HomeStayId": 30
+  },
+  {
+    "id": 49,
+    "checkInDate": "2027-01-05",
+    "checkOutDate": "2027-01-09",
+    "UserId": 2,
+    "HomeStayId": 37
+  },
+  {
+    "id": 50,
+    "checkInDate": "2027-01-07",
+    "checkOutDate": "2027-01-12",
+    "UserId": 3,
+    "HomeStayId": 44
+  }
+]
