@@ -20,6 +20,33 @@ class AdminController {
     }
   }
 
+  static async getAddHomestay(req, res) {
+    try {
+      res.render("addFormHomestay");
+    } catch (error) {
+      res.send(error);
+    }
+  }
+
+  static async postAddHomestay(req, res) {
+    try {
+      const { name, imageUrl, pricePerNight, roomAvailable, contactPIC } =
+        req.body;
+
+      await Homestay.create({
+        name,
+        imageUrl,
+        pricePerNight,
+        roomAvailable,
+        contactPIC,
+      });
+
+      res.redirect("/admin");
+    } catch (error) {
+      res.send(error);
+    }
+  }
+
   static async getEditHomestay(req, res) {
     try {
       const { id } = req.params;
@@ -52,7 +79,21 @@ class AdminController {
         },
       );
 
-      res.redirect("/homestays");
+      res.redirect("/admin");
+    } catch (error) {
+      res.send(error);
+    }
+  }
+
+  static async deleteHomestay(req, res) {
+    try {
+      const { id } = req.params;
+
+      await Homestay.destroy({
+        where: { id },
+      });
+
+      res.redirect("/admin");
     } catch (error) {
       res.send(error);
     }
