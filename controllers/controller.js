@@ -1,3 +1,5 @@
+const {Homestay, Amnesty, Booking, HomestayAmenity, Profile, User} = require('../models/index')
+
 class Controller {
     static async landingPage(req, res) {
         try {
@@ -56,9 +58,10 @@ class Controller {
 
     static async showHomestays (req, res) {
         try {
-            // const homestays = 
+            const homestays = await Homestay.findAll()
 
-            res.send("Welcome to Homestay")
+            res.render('showHomestay', {homestays})
+            // res.send("Welcome to Homestay")
 
         } catch (error) {
             res.send(error)
@@ -66,6 +69,55 @@ class Controller {
             
         }
     }
+
+    static async showDetailHomestay (req, res) {
+        try {
+            const {id} = req.params
+            const homestay = await Homestay.findByPk(id)
+            // console.log(homestay.imageUrl);
+            res.render('showDetailHomestay', {homestay})
+            // res.send("Welcome to Homestay")
+
+        } catch (error) {
+            res.send(error)
+            console.log(error);
+            
+        }
+    }
+    static async bookingHomestay (req, res) {
+        try {
+            // const {id} = req.params
+            const homestay = await Homestay.findByPk(id)
+            // console.log(homestay.imageUrl);
+            res.render('showDetailHomestay', {homestay})
+            // res.send("Welcome to Homestay")
+
+        } catch (error) {
+            res.send(error)
+            console.log(error);
+            
+        }
+    }
+
+    static async postBookingHomestay (req, res) {
+        try {
+            const {id} = req.params
+            const homestay = await Homestay.findByPk(id)
+            // console.log(homestay.imageUrl);
+            res.render('showDetailHomestay', {homestay})
+            // res.send("Welcome to Homestay")
+
+        } catch (error) {
+            res.send(error)
+            console.log(error);
+            
+        }
+    }
+
+    
+    
+
+
 
     static async showProfile(req, res) {
         try {
