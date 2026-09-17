@@ -1,3 +1,4 @@
+const {formatRupiah} = require("../helpers/formatRupiah")
 'use strict';
 const {
   Model
@@ -12,6 +13,11 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
     }
+
+ get formattedPrice() {
+  return formatRupiah(this.pricePerNight)
+  }
+
   }
   Homestay.init({
     name: DataTypes.STRING,
