@@ -1,160 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Edit Homestay</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-      margin: 0;
-      padding: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 80vh;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      width: 400px;
-    }
-
-    h1 {
-      font-size: 22px;
-      color: #333;
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 25px;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    label {
-      display: block;
-      font-size: 14px;
-      font-weight: bold;
-      color: #555;
-      margin-bottom: 5px;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-
-    input[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #218838;
-    }
-
-    .btn-back {
-      display: block;
-      text-align: center;
-      background-color: #6c757d;
-      color: white;
-      padding: 9px;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    .btn-back:hover {
-      background-color: #5a6268;
-    }
-  </style>
+  <meta name="description" content="Edit data homestay.">
+  <title>Edit Homestay — Pulau Seribu Stay</title>
+  <link rel="stylesheet" href="/css/app.css">
 </head>
-
 <body>
-
-  <div class="card">
-
-    <h1>Edit Homestay</h1>
-
-    <form action="/homestays/edit/<%= homestay.id %>" method="POST">
-
-      <div class="form-group">
-        <label>Nama Homestay:</label>
-        <input
-          type="text"
-          name="name"
-          value="<%= homestay.name %>"
-          required
-        >
+  <div class="site-shell">
+    <header class="site-header"><nav class="nav container" aria-label="Navigasi admin"><a href="/admin" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 19h18M5 16l3-5 3 3 4-7 4 9"/><path d="M4 19c3-2 5-2 8 0 3-2 5-2 8 0"/></svg></span><span class="brand-text">Pulau Seribu Stay</span></a><div class="nav-actions"><span class="badge">Admin</span><a href="/logout" class="btn btn-secondary btn-sm">Keluar</a></div></nav></header>
+    <main class="main-content">
+      <div class="container--narrow">
+        <section class="card form-card">
+          <header class="form-header"><p class="eyebrow">Perbarui data</p><h1>Edit homestay</h1><p>Pastikan informasi <strong><%= homestay.name %></strong> tetap akurat dan terbaru.</p></header>
+          <form action="/admin/homestays/<%= homestay.id %>/edit" method="POST">
+            <div class="form-grid">
+              <div class="form-group form-group--full"><label for="name">Nama homestay <span class="required" aria-hidden="true">*</span></label><input type="text" id="name" name="name" value="<%= homestay.name %>" required></div>
+              <div class="form-group form-group--full"><label for="imageUrl">URL gambar <span class="required" aria-hidden="true">*</span></label><input type="text" id="imageUrl" name="imageUrl" value="<%= homestay.imageUrl %>" required></div>
+              <div class="form-group"><label for="pricePerNight">Harga per malam <span class="required" aria-hidden="true">*</span></label><input type="number" id="pricePerNight" name="pricePerNight" value="<%= homestay.pricePerNight %>" required></div>
+              <div class="form-group"><label for="roomAvailable">Kamar tersedia <span class="required" aria-hidden="true">*</span></label><input type="number" id="roomAvailable" name="roomAvailable" value="<%= homestay.roomAvailable %>" required></div>
+              <div class="form-group form-group--full"><label for="contactPIC">Kontak PIC <span class="required" aria-hidden="true">*</span></label><input type="text" id="contactPIC" name="contactPIC" value="<%= homestay.contactPIC %>" required></div>
+            </div>
+            <div class="form-actions"><a href="/admin" class="btn btn-secondary">Batal</a><button type="submit" class="btn btn-primary">Simpan perubahan</button></div>
+          </form>
+        </section>
       </div>
-
-      <div class="form-group">
-        <label>Image URL:</label>
-        <input
-          type="text"
-          name="imageUrl"
-          value="<%= homestay.imageUrl %>"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <label>Harga per Malam:</label>
-        <input
-          type="number"
-          name="pricePerNight"
-          value="<%= homestay.pricePerNight %>"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <label>Kamar Tersedia:</label>
-        <input
-          type="number"
-          name="roomAvailable"
-          value="<%= homestay.roomAvailable %>"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <label>Contact PIC:</label>
-        <input
-          type="text"
-          name="contactPIC"
-          value="<%= homestay.contactPIC %>"
-          required
-        >
-      </div>
-
-      <input type="submit" value="Simpan Perubahan">
-
-    </form>
-
-    <a href="/homestays" class="btn-back">
-      Batal
-    </a>
-
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Pulau Seribu Stay</span><span>Dashboard pengelolaan homestay</span></div></footer>
   </div>
-
 </body>
 </html>
