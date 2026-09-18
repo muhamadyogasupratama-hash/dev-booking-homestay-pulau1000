@@ -8,4 +8,5 @@ router.get('/homestays/:id/edit', AdminController.getEditHomestay)
 router.post('/homestays/:id/edit', AdminController.postEditHomestay)
 router.get('/homestays/:id/delete', AdminController.deleteHomestay)
 
+
 module.exports = router

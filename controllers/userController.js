@@ -26,37 +26,33 @@ class UserController {
             //     } else {
             //         res.send("Login tidak sesuai")
             //     }
-            const user = await User.findOne({
+            const users = await User.findAll({
                 where: {
                     email: email
                 }
             })
-            // console.log(user);
 
-            if (user) {
-                const isValidPassword = await bcrypt.compare(password, user.password)
-                // console.log(isValidPassword);
-                if (isValidPassword) {
-                    req.session.userId = user.id
-                    req.session.userRole = user.role
-
-                    if (user.role === "admin") {
-                        res.redirect('/admin')
-                    }
-                    else {
-                        return res.redirect('/homestays')
-                    }
-                }
-                else {
-                    const error = "Invalid email/password"
-                    return res.redirect(`/?errors=${error}`)
+            let user
+            for (const candidate of users) {
+                if (await bcrypt.compare(password, candidate.password)) {
+                    user = candidate
+                    break
                 }
             }
-            else {
+
+            if (!user) {
                 const error = "Invalid email/password"
-                // console.log('salah password');
                 return res.redirect(`/?errors=${error}`)
             }
+
+            req.session.userId = user.id
+            req.session.userRole = user.role
+
+            if (user.role === "admin") {
+                return res.redirect('/admin')
+            }
+
+            return res.redirect('/homestays')
 
         } catch (error) {
             res.send(error)
@@ -135,7 +131,7 @@ class UserController {
             const {id} = req.params
             const homestay = await Homestay.findByPk(id)
             // console.log(homestay.imageUrl);
-            res.render('showDetailHomestay', {homestay})
+            res.render('showDetailHomestay', {homestay, userRole: req.session.userRole})
             // res.send("Welcome to Homestay")
 
         } catch (error) {
