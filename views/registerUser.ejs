@@ -18,7 +18,7 @@
 <body>
     <div class="card">
         <h1>Daftar Akun Baru</h1>
-        <% if(errors) { %>
+        <% if(typeof errors !== 'undefined' && errors) { %>
             <p style="color: red;">
                 <% errors.forEach(err => { %>
                 <%= err %>

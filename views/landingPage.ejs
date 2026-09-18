@@ -19,9 +19,15 @@
     <div class="card">
         <h1>Homestay Pulau 1000</h1>
 
-        <% if (errors) { %>
+        <% if (typeof errors !== 'undefined' && errors) { %>
         <div style="color: red ;" class="alert alert-danger" role="alert">
             <%= errors %>
+        </div>
+        <% } %>
+
+        <% if (typeof success !== 'undefined' && success) { %>
+        <div style="color: #0056b3;" class="alert alert-success" role="alert">
+            <%= success %>
         </div>
         <% } %>
         

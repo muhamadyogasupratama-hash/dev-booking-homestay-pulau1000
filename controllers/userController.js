@@ -8,8 +8,8 @@ const moment = require('moment')
 class UserController {
     static async landingPage(req, res) {
         try {
-            const {errors} = req.query
-            res.render('landingPage', {errors})
+            const {errors, success} = req.query
+            res.render('landingPage', {errors, success})
         } catch (error) {
             res.send(error)
             console.log(error);
@@ -96,8 +96,9 @@ class UserController {
             // console.log(password);
             const newUser = await User.create({email, password})
             await Profile.create({name, noHp, UserId: newUser.id})
+            const message = "Register success, please logint again"
 
-            res.redirect('/')
+            res.redirect(`/?success=${message}`)
         } catch (error) {
             if (error.name === "SequelizeValidationError") {
                 const errors = error.errors.map(err => err.message)
