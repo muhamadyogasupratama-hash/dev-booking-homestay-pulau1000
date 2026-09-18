@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Homestay Harmoni Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=1",
+    "imageURL": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 150000,
     "roomAvailable": 1,
     "contactPIC": "081210000001"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Homestay Harmoni Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=2",
+    "imageURL": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 175000,
     "roomAvailable": 2,
     "contactPIC": "081210000002"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Homestay Harmoni Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=3",
+    "imageURL": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 200000,
     "roomAvailable": 3,
     "contactPIC": "081210000003"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Homestay Harmoni Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=4",
+    "imageURL": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 225000,
     "roomAvailable": 4,
     "contactPIC": "081210000004"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "name": "Homestay Harmoni Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=5",
+    "imageURL": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 250000,
     "roomAvailable": 5,
     "contactPIC": "081210000005"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "name": "Homestay Harmoni Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=6",
+    "imageURL": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 275000,
     "roomAvailable": 6,
     "contactPIC": "081210000006"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "name": "Homestay Harmoni Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=7",
+    "imageURL": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 300000,
     "roomAvailable": 7,
     "contactPIC": "081210000007"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "name": "Homestay Harmoni Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=8",
+    "imageURL": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 325000,
     "roomAvailable": 8,
     "contactPIC": "081210000008"
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "name": "Homestay Harmoni Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=9",
+    "imageURL": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 350000,
     "roomAvailable": 9,
     "contactPIC": "081210000009"
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "name": "Homestay Harmoni Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=10",
+    "imageURL": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 375000,
     "roomAvailable": 10,
     "contactPIC": "081210000010"
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "name": "Homestay Nusantara Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=11",
+    "imageURL": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 400000,
     "roomAvailable": 1,
     "contactPIC": "081210000011"
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "name": "Homestay Nusantara Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=12",
+    "imageURL": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 425000,
     "roomAvailable": 2,
     "contactPIC": "081210000012"
@@ -98,7 +98,7 @@
   {
     "id": 13,
     "name": "Homestay Nusantara Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=13",
+    "imageURL": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 450000,
     "roomAvailable": 3,
     "contactPIC": "081210000013"
@@ -106,7 +106,7 @@
   {
     "id": 14,
     "name": "Homestay Nusantara Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=14",
+    "imageURL": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 475000,
     "roomAvailable": 4,
     "contactPIC": "081210000014"
@@ -114,7 +114,7 @@
   {
     "id": 15,
     "name": "Homestay Nusantara Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=15",
+    "imageURL": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 500000,
     "roomAvailable": 5,
     "contactPIC": "081210000015"
@@ -122,7 +122,7 @@
   {
     "id": 16,
     "name": "Homestay Nusantara Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=16",
+    "imageURL": "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 150000,
     "roomAvailable": 6,
     "contactPIC": "081210000016"
@@ -130,7 +130,7 @@
   {
     "id": 17,
     "name": "Homestay Nusantara Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=17",
+    "imageURL": "https://images.unsplash.com/photo-1600607688066-890987f18a86?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 175000,
     "roomAvailable": 7,
     "contactPIC": "081210000017"
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "name": "Homestay Nusantara Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=18",
+    "imageURL": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 200000,
     "roomAvailable": 8,
     "contactPIC": "081210000018"
@@ -146,7 +146,7 @@
   {
     "id": 19,
     "name": "Homestay Nusantara Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=19",
+    "imageURL": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 225000,
     "roomAvailable": 9,
     "contactPIC": "081210000019"
@@ -154,7 +154,7 @@
   {
     "id": 20,
     "name": "Homestay Nusantara Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=20",
+    "imageURL": "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 250000,
     "roomAvailable": 10,
     "contactPIC": "081210000020"
@@ -162,7 +162,7 @@
   {
     "id": 21,
     "name": "Homestay Mawar Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=21",
+    "imageURL": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 275000,
     "roomAvailable": 1,
     "contactPIC": "081210000021"
@@ -170,7 +170,7 @@
   {
     "id": 22,
     "name": "Homestay Mawar Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=22",
+    "imageURL": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 300000,
     "roomAvailable": 2,
     "contactPIC": "081210000022"
@@ -178,7 +178,7 @@
   {
     "id": 23,
     "name": "Homestay Mawar Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=23",
+    "imageURL": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 325000,
     "roomAvailable": 3,
     "contactPIC": "081210000023"
@@ -186,7 +186,7 @@
   {
     "id": 24,
     "name": "Homestay Mawar Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=24",
+    "imageURL": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 350000,
     "roomAvailable": 4,
     "contactPIC": "081210000024"
@@ -194,7 +194,7 @@
   {
     "id": 25,
     "name": "Homestay Mawar Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=25",
+    "imageURL": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 375000,
     "roomAvailable": 5,
     "contactPIC": "081210000025"
@@ -202,7 +202,7 @@
   {
     "id": 26,
     "name": "Homestay Mawar Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=26",
+    "imageURL": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 400000,
     "roomAvailable": 6,
     "contactPIC": "081210000026"
@@ -210,7 +210,7 @@
   {
     "id": 27,
     "name": "Homestay Mawar Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=27",
+    "imageURL": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 425000,
     "roomAvailable": 7,
     "contactPIC": "081210000027"
@@ -218,7 +218,7 @@
   {
     "id": 28,
     "name": "Homestay Mawar Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=28",
+    "imageURL": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 450000,
     "roomAvailable": 8,
     "contactPIC": "081210000028"
@@ -226,7 +226,7 @@
   {
     "id": 29,
     "name": "Homestay Mawar Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=29",
+    "imageURL": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 475000,
     "roomAvailable": 9,
     "contactPIC": "081210000029"
@@ -234,7 +234,7 @@
   {
     "id": 30,
     "name": "Homestay Mawar Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=30",
+    "imageURL": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 500000,
     "roomAvailable": 10,
     "contactPIC": "081210000030"
@@ -242,7 +242,7 @@
   {
     "id": 31,
     "name": "Homestay Cendana Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=31",
+    "imageURL": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 150000,
     "roomAvailable": 1,
     "contactPIC": "081210000031"
@@ -250,7 +250,7 @@
   {
     "id": 32,
     "name": "Homestay Cendana Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=32",
+    "imageURL": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 175000,
     "roomAvailable": 2,
     "contactPIC": "081210000032"
@@ -258,7 +258,7 @@
   {
     "id": 33,
     "name": "Homestay Cendana Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=33",
+    "imageURL": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 200000,
     "roomAvailable": 3,
     "contactPIC": "081210000033"
@@ -266,7 +266,7 @@
   {
     "id": 34,
     "name": "Homestay Cendana Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=34",
+    "imageURL": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 225000,
     "roomAvailable": 4,
     "contactPIC": "081210000034"
@@ -274,7 +274,7 @@
   {
     "id": 35,
     "name": "Homestay Cendana Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=35",
+    "imageURL": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 250000,
     "roomAvailable": 5,
     "contactPIC": "081210000035"
@@ -282,7 +282,7 @@
   {
     "id": 36,
     "name": "Homestay Cendana Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=36",
+    "imageURL": "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 275000,
     "roomAvailable": 6,
     "contactPIC": "081210000036"
@@ -290,7 +290,7 @@
   {
     "id": 37,
     "name": "Homestay Cendana Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=37",
+    "imageURL": "https://images.unsplash.com/photo-1600607688066-890987f18a86?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 300000,
     "roomAvailable": 7,
     "contactPIC": "081210000037"
@@ -298,7 +298,7 @@
   {
     "id": 38,
     "name": "Homestay Cendana Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=38",
+    "imageURL": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 325000,
     "roomAvailable": 8,
     "contactPIC": "081210000038"
@@ -306,7 +306,7 @@
   {
     "id": 39,
     "name": "Homestay Cendana Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=39",
+    "imageURL": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 350000,
     "roomAvailable": 9,
     "contactPIC": "081210000039"
@@ -314,7 +314,7 @@
   {
     "id": 40,
     "name": "Homestay Cendana Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=40",
+    "imageURL": "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 375000,
     "roomAvailable": 10,
     "contactPIC": "081210000040"
@@ -322,7 +322,7 @@
   {
     "id": 41,
     "name": "Homestay Mentari Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=41",
+    "imageURL": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 400000,
     "roomAvailable": 1,
     "contactPIC": "081210000041"
@@ -330,7 +330,7 @@
   {
     "id": 42,
     "name": "Homestay Mentari Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=42",
+    "imageURL": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 425000,
     "roomAvailable": 2,
     "contactPIC": "081210000042"
@@ -338,7 +338,7 @@
   {
     "id": 43,
     "name": "Homestay Mentari Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=43",
+    "imageURL": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 450000,
     "roomAvailable": 3,
     "contactPIC": "081210000043"
@@ -346,7 +346,7 @@
   {
     "id": 44,
     "name": "Homestay Mentari Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=44",
+    "imageURL": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 475000,
     "roomAvailable": 4,
     "contactPIC": "081210000044"
@@ -354,7 +354,7 @@
   {
     "id": 45,
     "name": "Homestay Mentari Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=45",
+    "imageURL": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 500000,
     "roomAvailable": 5,
     "contactPIC": "081210000045"
@@ -362,7 +362,7 @@
   {
     "id": 46,
     "name": "Homestay Mentari Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=46",
+    "imageURL": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 150000,
     "roomAvailable": 6,
     "contactPIC": "081210000046"
@@ -370,7 +370,7 @@
   {
     "id": 47,
     "name": "Homestay Mentari Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=47",
+    "imageURL": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 175000,
     "roomAvailable": 7,
     "contactPIC": "081210000047"
@@ -378,7 +378,7 @@
   {
     "id": 48,
     "name": "Homestay Mentari Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=48",
+    "imageURL": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 200000,
     "roomAvailable": 8,
     "contactPIC": "081210000048"
@@ -386,7 +386,7 @@
   {
     "id": 49,
     "name": "Homestay Mentari Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=49",
+    "imageURL": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 225000,
     "roomAvailable": 9,
     "contactPIC": "081210000049"
@@ -394,7 +394,7 @@
   {
     "id": 50,
     "name": "Homestay Mentari Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=50",
+    "imageURL": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 250000,
     "roomAvailable": 10,
     "contactPIC": "081210000050"
@@ -402,7 +402,7 @@
   {
     "id": 51,
     "name": "Homestay Asri Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=51",
+    "imageURL": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 275000,
     "roomAvailable": 1,
     "contactPIC": "081210000051"
@@ -410,7 +410,7 @@
   {
     "id": 52,
     "name": "Homestay Asri Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=52",
+    "imageURL": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 300000,
     "roomAvailable": 2,
     "contactPIC": "081210000052"
@@ -418,7 +418,7 @@
   {
     "id": 53,
     "name": "Homestay Asri Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=53",
+    "imageURL": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 325000,
     "roomAvailable": 3,
     "contactPIC": "081210000053"
@@ -426,7 +426,7 @@
   {
     "id": 54,
     "name": "Homestay Asri Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=54",
+    "imageURL": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 350000,
     "roomAvailable": 4,
     "contactPIC": "081210000054"
@@ -434,7 +434,7 @@
   {
     "id": 55,
     "name": "Homestay Asri Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=55",
+    "imageURL": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 375000,
     "roomAvailable": 5,
     "contactPIC": "081210000055"
@@ -442,7 +442,7 @@
   {
     "id": 56,
     "name": "Homestay Asri Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=56",
+    "imageURL": "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 400000,
     "roomAvailable": 6,
     "contactPIC": "081210000056"
@@ -450,7 +450,7 @@
   {
     "id": 57,
     "name": "Homestay Asri Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=57",
+    "imageURL": "https://images.unsplash.com/photo-1600607688066-890987f18a86?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 425000,
     "roomAvailable": 7,
     "contactPIC": "081210000057"
@@ -458,7 +458,7 @@
   {
     "id": 58,
     "name": "Homestay Asri Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=58",
+    "imageURL": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 450000,
     "roomAvailable": 8,
     "contactPIC": "081210000058"
@@ -466,7 +466,7 @@
   {
     "id": 59,
     "name": "Homestay Asri Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=59",
+    "imageURL": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 475000,
     "roomAvailable": 9,
     "contactPIC": "081210000059"
@@ -474,7 +474,7 @@
   {
     "id": 60,
     "name": "Homestay Asri Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=60",
+    "imageURL": "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 500000,
     "roomAvailable": 10,
     "contactPIC": "081210000060"
@@ -482,7 +482,7 @@
   {
     "id": 61,
     "name": "Homestay Pelangi Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=61",
+    "imageURL": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 150000,
     "roomAvailable": 1,
     "contactPIC": "081210000061"
@@ -490,7 +490,7 @@
   {
     "id": 62,
     "name": "Homestay Pelangi Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=62",
+    "imageURL": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 175000,
     "roomAvailable": 2,
     "contactPIC": "081210000062"
@@ -498,7 +498,7 @@
   {
     "id": 63,
     "name": "Homestay Pelangi Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=63",
+    "imageURL": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 200000,
     "roomAvailable": 3,
     "contactPIC": "081210000063"
@@ -506,7 +506,7 @@
   {
     "id": 64,
     "name": "Homestay Pelangi Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=64",
+    "imageURL": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 225000,
     "roomAvailable": 4,
     "contactPIC": "081210000064"
@@ -514,7 +514,7 @@
   {
     "id": 65,
     "name": "Homestay Pelangi Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=65",
+    "imageURL": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 250000,
     "roomAvailable": 5,
     "contactPIC": "081210000065"
@@ -522,7 +522,7 @@
   {
     "id": 66,
     "name": "Homestay Pelangi Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=66",
+    "imageURL": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 275000,
     "roomAvailable": 6,
     "contactPIC": "081210000066"
@@ -530,7 +530,7 @@
   {
     "id": 67,
     "name": "Homestay Pelangi Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=67",
+    "imageURL": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 300000,
     "roomAvailable": 7,
     "contactPIC": "081210000067"
@@ -538,7 +538,7 @@
   {
     "id": 68,
     "name": "Homestay Pelangi Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=68",
+    "imageURL": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 325000,
     "roomAvailable": 8,
     "contactPIC": "081210000068"
@@ -546,7 +546,7 @@
   {
     "id": 69,
     "name": "Homestay Pelangi Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=69",
+    "imageURL": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 350000,
     "roomAvailable": 9,
     "contactPIC": "081210000069"
@@ -554,7 +554,7 @@
   {
     "id": 70,
     "name": "Homestay Pelangi Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=70",
+    "imageURL": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 375000,
     "roomAvailable": 10,
     "contactPIC": "081210000070"
@@ -562,7 +562,7 @@
   {
     "id": 71,
     "name": "Homestay Kenanga Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=71",
+    "imageURL": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 400000,
     "roomAvailable": 1,
     "contactPIC": "081210000071"
@@ -570,7 +570,7 @@
   {
     "id": 72,
     "name": "Homestay Kenanga Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=72",
+    "imageURL": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 425000,
     "roomAvailable": 2,
     "contactPIC": "081210000072"
@@ -578,7 +578,7 @@
   {
     "id": 73,
     "name": "Homestay Kenanga Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=73",
+    "imageURL": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 450000,
     "roomAvailable": 3,
     "contactPIC": "081210000073"
@@ -586,7 +586,7 @@
   {
     "id": 74,
     "name": "Homestay Kenanga Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=74",
+    "imageURL": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 475000,
     "roomAvailable": 4,
     "contactPIC": "081210000074"
@@ -594,7 +594,7 @@
   {
     "id": 75,
     "name": "Homestay Kenanga Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=75",
+    "imageURL": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 500000,
     "roomAvailable": 5,
     "contactPIC": "081210000075"
@@ -602,7 +602,7 @@
   {
     "id": 76,
     "name": "Homestay Kenanga Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=76",
+    "imageURL": "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 150000,
     "roomAvailable": 6,
     "contactPIC": "081210000076"
@@ -610,7 +610,7 @@
   {
     "id": 77,
     "name": "Homestay Kenanga Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=77",
+    "imageURL": "https://images.unsplash.com/photo-1600607688066-890987f18a86?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 175000,
     "roomAvailable": 7,
     "contactPIC": "081210000077"
@@ -618,7 +618,7 @@
   {
     "id": 78,
     "name": "Homestay Kenanga Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=78",
+    "imageURL": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 200000,
     "roomAvailable": 8,
     "contactPIC": "081210000078"
@@ -626,7 +626,7 @@
   {
     "id": 79,
     "name": "Homestay Kenanga Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=79",
+    "imageURL": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 225000,
     "roomAvailable": 9,
     "contactPIC": "081210000079"
@@ -634,7 +634,7 @@
   {
     "id": 80,
     "name": "Homestay Kenanga Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=80",
+    "imageURL": "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 250000,
     "roomAvailable": 10,
     "contactPIC": "081210000080"
@@ -642,7 +642,7 @@
   {
     "id": 81,
     "name": "Homestay Puspa Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=81",
+    "imageURL": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 275000,
     "roomAvailable": 1,
     "contactPIC": "081210000081"
@@ -650,7 +650,7 @@
   {
     "id": 82,
     "name": "Homestay Puspa Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=82",
+    "imageURL": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 300000,
     "roomAvailable": 2,
     "contactPIC": "081210000082"
@@ -658,7 +658,7 @@
   {
     "id": 83,
     "name": "Homestay Puspa Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=83",
+    "imageURL": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 325000,
     "roomAvailable": 3,
     "contactPIC": "081210000083"
@@ -666,7 +666,7 @@
   {
     "id": 84,
     "name": "Homestay Puspa Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=84",
+    "imageURL": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 350000,
     "roomAvailable": 4,
     "contactPIC": "081210000084"
@@ -674,7 +674,7 @@
   {
     "id": 85,
     "name": "Homestay Puspa Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=85",
+    "imageURL": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 375000,
     "roomAvailable": 5,
     "contactPIC": "081210000085"
@@ -682,7 +682,7 @@
   {
     "id": 86,
     "name": "Homestay Puspa Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=86",
+    "imageURL": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 400000,
     "roomAvailable": 6,
     "contactPIC": "081210000086"
@@ -690,7 +690,7 @@
   {
     "id": 87,
     "name": "Homestay Puspa Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=87",
+    "imageURL": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 425000,
     "roomAvailable": 7,
     "contactPIC": "081210000087"
@@ -698,7 +698,7 @@
   {
     "id": 88,
     "name": "Homestay Puspa Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=88",
+    "imageURL": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 450000,
     "roomAvailable": 8,
     "contactPIC": "081210000088"
@@ -706,7 +706,7 @@
   {
     "id": 89,
     "name": "Homestay Puspa Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=89",
+    "imageURL": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 475000,
     "roomAvailable": 9,
     "contactPIC": "081210000089"
@@ -714,7 +714,7 @@
   {
     "id": 90,
     "name": "Homestay Puspa Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=90",
+    "imageURL": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 500000,
     "roomAvailable": 10,
     "contactPIC": "081210000090"
@@ -722,7 +722,7 @@
   {
     "id": 91,
     "name": "Homestay Senja Yogyakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=91",
+    "imageURL": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 150000,
     "roomAvailable": 1,
     "contactPIC": "081210000091"
@@ -730,7 +730,7 @@
   {
     "id": 92,
     "name": "Homestay Senja Bandung",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=92",
+    "imageURL": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 175000,
     "roomAvailable": 2,
     "contactPIC": "081210000092"
@@ -738,7 +738,7 @@
   {
     "id": 93,
     "name": "Homestay Senja Bali",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=93",
+    "imageURL": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 200000,
     "roomAvailable": 3,
     "contactPIC": "081210000093"
@@ -746,7 +746,7 @@
   {
     "id": 94,
     "name": "Homestay Senja Malang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=94",
+    "imageURL": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 225000,
     "roomAvailable": 4,
     "contactPIC": "081210000094"
@@ -754,7 +754,7 @@
   {
     "id": 95,
     "name": "Homestay Senja Bogor",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=95",
+    "imageURL": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 250000,
     "roomAvailable": 5,
     "contactPIC": "081210000095"
@@ -762,7 +762,7 @@
   {
     "id": 96,
     "name": "Homestay Senja Solo",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=96",
+    "imageURL": "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 275000,
     "roomAvailable": 6,
     "contactPIC": "081210000096"
@@ -770,7 +770,7 @@
   {
     "id": 97,
     "name": "Homestay Senja Lombok",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=97",
+    "imageURL": "https://images.unsplash.com/photo-1600607688066-890987f18a86?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 300000,
     "roomAvailable": 7,
     "contactPIC": "081210000097"
@@ -778,7 +778,7 @@
   {
     "id": 98,
     "name": "Homestay Senja Semarang",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=98",
+    "imageURL": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 325000,
     "roomAvailable": 8,
     "contactPIC": "081210000098"
@@ -786,7 +786,7 @@
   {
     "id": 99,
     "name": "Homestay Senja Batu",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=99",
+    "imageURL": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 350000,
     "roomAvailable": 9,
     "contactPIC": "081210000099"
@@ -794,7 +794,7 @@
   {
     "id": 100,
     "name": "Homestay Senja Jakarta",
-    "imageURL": "https://loremflickr.com/800/600/house,home/all?lock=100",
+    "imageURL": "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?auto=format&fit=crop&w=1200&q=80",
     "pricePerNight": 375000,
     "roomAvailable": 10,
     "contactPIC": "081210000100"
