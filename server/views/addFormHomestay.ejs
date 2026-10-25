@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tambah homestay baru.">
+  <title>Tambah Homestay — Pulau Seribu Stay</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header"><nav class="nav container" aria-label="Navigasi admin"><a href="/admin" class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 19h18M5 16l3-5 3 3 4-7 4 9"/><path d="M4 19c3-2 5-2 8 0 3-2 5-2 8 0"/></svg></span><span class="brand-text">Pulau Seribu Stay</span></a><div class="nav-actions"><span class="badge">Admin</span><a href="/logout" class="btn btn-secondary btn-sm">Keluar</a></div></nav></header>
+    <main class="main-content">
+      <div class="container--narrow">
+        <section class="card form-card">
+          <header class="form-header"><p class="eyebrow">Data baru</p><h1>Tambah homestay</h1><p>Lengkapi informasi utama agar homestay dapat ditampilkan dengan jelas.</p></header>
+          <form action="/admin/homestays/add" method="POST">
+            <div class="form-grid">
+              <div class="form-group form-group--full"><label for="name">Nama homestay <span class="required" aria-hidden="true">*</span></label><input type="text" id="name" name="name" placeholder="Contoh: Villa Bahari" required></div>
+              <div class="form-group form-group--full"><label for="imageUrl">URL gambar <span class="required" aria-hidden="true">*</span></label><input type="text" id="imageUrl" name="imageUrl" placeholder="https://contoh.com/gambar.jpg" required></div>
+              <div class="form-group"><label for="pricePerNight">Harga per malam <span class="required" aria-hidden="true">*</span></label><input type="number" id="pricePerNight" name="pricePerNight" min="0" placeholder="500000" required></div>
+              <div class="form-group"><label for="roomAvailable">Kamar tersedia <span class="required" aria-hidden="true">*</span></label><input type="number" id="roomAvailable" name="roomAvailable" min="0" placeholder="5" required></div>
+              <div class="form-group form-group--full"><label for="contactPIC">Kontak PIC <span class="required" aria-hidden="true">*</span></label><input type="text" id="contactPIC" name="contactPIC" placeholder="Nomor telepon atau nama PIC" required></div>
+            </div>
+            <div class="form-actions"><a href="/admin" class="btn btn-secondary">Batal</a><button type="submit" class="btn btn-primary">Tambah homestay</button></div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Pulau Seribu Stay</span><span>Dashboard pengelolaan homestay</span></div></footer>
+  </div>
+</body>
+</html>
