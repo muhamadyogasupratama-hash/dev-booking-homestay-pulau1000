@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Booking.belongsTo(models.User, {foreignKey: 'UserId'})
       Booking.belongsTo(models.Homestay, {foreignKey: 'HomeStayId'})
+      Booking.belongsTo(models.Amnesty, {foreignKey: 'AmnestyId'})
       
     }
   }
@@ -20,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
     checkInDate: DataTypes.DATE,
     checkOutDate: DataTypes.DATE,
     UserId: DataTypes.INTEGER,
-    HomeStayId: DataTypes.INTEGER
+    HomeStayId: DataTypes.INTEGER,
+    AmnestyId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Booking',

@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         through: 'HomestayAmenity',
         foreignKey: 'AmenityId',
       });
+      Amnesty.hasMany(models.Booking, { foreignKey: 'AmnestyId' });
     } 
   }
   Amnesty.init({

@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
       validate: {
         notNull: {
           msg: "Email is required"
@@ -50,7 +51,8 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
-    role: DataTypes.STRING
+    role: DataTypes.STRING,
+    tokenVersion: { type: DataTypes.INTEGER, allowNull: false, defaultValue: 0 },
   }, {
     sequelize,
     modelName: 'User',
@@ -60,7 +62,7 @@ module.exports = (sequelize, DataTypes) => {
   const salt = await bcrypt.genSalt(10);
   const hash = await bcrypt.hash(user.password, salt);
   user.password = hash
-  user.role = "customer"
+  if (!user.role) user.role = "customer"
 });
 
 
